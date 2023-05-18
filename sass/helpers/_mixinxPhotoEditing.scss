@@ -1,0 +1,28 @@
+@mixin list-reset {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@mixin disfSpaceBetween($dir) {
+    display: flex;
+    @if($dir=="row") {
+        justify-content: space-between;
+    }
+    @else {
+        align-items: center;
+    }
+    flex-direction: $dir;
+}
+
+@mixin graiding {
+    display: grid;
+}
+
+@mixin graidingColumns($columns...) {
+    $val: null;
+    @each $col in $columns {
+        $val: $val +$col;
+    }
+    grid-template-columns: $val;
+}

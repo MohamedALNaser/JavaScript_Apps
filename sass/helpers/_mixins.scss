@@ -1,0 +1,45 @@
+    @mixin list-reset {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    
+    @mixin borderRadius($radius...) {
+        $rad: null;
+        @each $item in $radius {
+            $rad: $rad + $item;
+        }
+        border-radius: $rad;
+        -webkit-border-radius: $rad;
+        -moz-border-radius: $rad;
+        -ms-border-radius: $rad;
+        -o-border-radius: $rad;
+    }
+    
+    @mixin tanslate($x, $y) {
+        transform: translate($x, $y);
+        -webkit-transform: translate($x, $y);
+        -moz-transform: translate($x, $y);
+        -ms-transform: translate($x, $y);
+        -o-transform: translate($x, $y);
+    }
+    
+    @mixin disfSpaceBetween($dir) {
+        display: flex;
+        @if($dir=="row") {
+            justify-content: space-between;
+        }
+        @else {
+            gap: 10px 0;
+        }
+        flex-direction: $dir;
+    }
+    
+    @mixin graidCols($columns...) {
+        display: grid;
+        $val: null;
+        @each $col in $columns {
+            $val: $val +$col;
+        }
+        grid-template-columns: $val;
+    }

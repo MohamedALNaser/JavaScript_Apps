@@ -1,0 +1,39 @@
+    // @use './functions/function' as *;
+    @use './helpers/mixins' as *;
+    @use './layout/global-rules';
+    @use './variable/color' as *;
+    @use './variable/width' as *;
+    .container {
+        background-color: $main-color;
+        min-height: 80vh;
+        max-width: 80vw;
+        display: flex;
+        justify-content: space-around;
+        // align-items: center;
+        padding: 20px;
+        margin: auto {
+            top: 80px;
+        }
+        .photoEditing,
+        .Glass {
+            background-color: #111;
+            max-width: 300px;
+            height: fit-content;
+            display: flex;
+            justify-content: center;
+            a {
+                margin: 5% auto;
+                width: 90%;
+                img {
+                    border: 2px solid #eee;
+                    max-width: 100%;
+                }
+                p {
+                    font-size: 20px;
+                    text-align: center;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+        }
+    }

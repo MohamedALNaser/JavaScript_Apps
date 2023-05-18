@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 30px 20px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  margin: 0 10px;
+}
+
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+p {
+  line-height: 1.8;
+  color: #9b9393;
+  color: #979191;
+}
+
+.container {
+  background-color: #ffcf48;
+  min-height: 80vh;
+  max-width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: auto;
+  margin-top: 80px;
+}
+.container .photoEditing,
+.container .Glass {
+  background-color: #111;
+  max-width: 300px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+.container .photoEditing a,
+.container .Glass a {
+  margin: 5% auto;
+  width: 90%;
+}
+.container .photoEditing a img,
+.container .Glass a img {
+  border: 2px solid #eee;
+  max-width: 100%;
+}
+.container .photoEditing a p,
+.container .Glass a p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+}/*# sourceMappingURL=master.css.map */

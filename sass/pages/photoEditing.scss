@@ -1,0 +1,112 @@
+@use './../layout/global-rules';
+@use './../variable/color' as *;
+@use './../variable/width' as *;
+@use './../helpers/mixinxPhotoEditing' as *;
+.photoEditing-container {
+    background-color: #222;
+    width: $photoEditingConrainer-size + vw;
+    min-height: $photoEditingConrainer-size + vh;
+    margin: 80px auto 50px;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    @include graiding;
+    @include graidingColumns(5fr 3fr);
+    .img {
+        @include disfSpaceBetween(column);
+        justify-content: space-evenly;
+        gap: 50px;
+        .img-box {
+            img,
+            canvas {
+                max-width: 45vw;
+                max-height: 60vh;
+            }
+        }
+        .upload {
+            padding: 30px;
+            label {
+                color: #ddd;
+                padding: 10px;
+                border: 2px #ddd {
+                    style: dashed;
+                }
+                background-color: #578557;
+                cursor: pointer;
+                text-transform: uppercase;
+                transition: 0.3s;
+                -webkit-transition: 0.3s;
+                -moz-transition: 0.3s;
+                -ms-transition: 0.3s;
+                -o-transition: 0.3s;
+                &:hover {
+                    background-color: #060;
+                }
+            }
+            input {
+                display: none;
+            }
+        }
+    }
+    .filters {
+        ul {
+            gap: 30px;
+            @include disfSpaceBetween(column);
+            @include list-reset;
+            direction: rtl;
+            li {
+                direction: rtl;
+                gap: 20px;
+                width: 100%;
+                @include disfSpaceBetween(column);
+                label {
+                    color: $main-color;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                input {
+                    width: 100%;
+                    cursor: pointer;
+                }
+                &:last-child {
+                    @include disfSpaceBetween(row);
+                }
+                a,
+                span {
+                    color: $main-color;
+                    padding: 10px 20px;
+                    text-transform: capitalize;
+                    font-weight: bold;
+                    background-color: #578557;
+                    cursor: pointer;
+                    transition: 0.3s;
+                    -webkit-transition: 0.3s;
+                    -moz-transition: 0.3s;
+                    -ms-transition: 0.3s;
+                    -o-transition: 0.3s;
+                    &:hover {
+                        background-color: #060;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:767px) {
+    .photoEditing-container {
+        @include graidingColumns(1fr);
+        .img {
+            .img-box {
+                img,
+                canvas {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
