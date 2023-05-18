@@ -1,10 +1,10 @@
-let tilte = document.querySelector(".title");
+let title = document.querySelector(".title");
 let ul = document.querySelector("ul");
 let reload = document.querySelector(".reload");
 
 function offline() {
-  tilte.innerHTML = "Offline Now";
-  tilte.style.color = "red";
+  title.innerHTML = "Offline Now";
+  title.style.color = "red";
   ul.classList.remove("hide");
   reload.classList.remove("hide");
 }

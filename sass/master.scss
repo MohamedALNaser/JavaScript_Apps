@@ -12,22 +12,23 @@
         flex-wrap: wrap;
         // align-items: center;
         padding: 20px;
-        margin: auto {
-            top: 80px;
-        }
+        margin: 0 auto;
         >div {
             background-color: #111;
             max-width: 300px;
+            max-height: 300px;
             height: fit-content;
             display: flex;
             justify-content: center;
+            margin: 10px;
             a {
                 margin: 5% auto;
                 width: 90%;
                 img {
                     border: 2px solid #eee;
                     max-width: 100%;
-                    min-height: 205px;
+                    height: 205px;
+                    width: 280px;
                 }
                 p {
                     font-size: 20px;
