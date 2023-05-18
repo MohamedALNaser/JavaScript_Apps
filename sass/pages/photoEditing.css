@@ -28,7 +28,6 @@ a {
 p {
   line-height: 1.8;
   color: #9b9393;
-  color: #979191;
 }
 
 .photoEditing-container {
@@ -137,7 +136,7 @@ p {
     grid-template-columns: 1fr;
   }
   .photoEditing-container .img .img-box img,
-.photoEditing-container .img .img-box canvas {
+  .photoEditing-container .img .img-box canvas {
     max-width: 100%;
   }
 }/*# sourceMappingURL=photoEditing.css.map */

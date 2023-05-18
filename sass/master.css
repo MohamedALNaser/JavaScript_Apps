@@ -28,7 +28,6 @@ a {
 p {
   line-height: 1.8;
   color: #9b9393;
-  color: #979191;
 }
 
 .container {
@@ -37,32 +36,29 @@ p {
   max-width: 80vw;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   padding: 20px;
   margin: auto;
   margin-top: 80px;
 }
-.container .photoEditing,
-.container .Glass {
+.container > div {
   background-color: #111;
   max-width: 300px;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   display: flex;
   justify-content: center;
 }
-.container .photoEditing a,
-.container .Glass a {
+.container > div a {
   margin: 5% auto;
   width: 90%;
 }
-.container .photoEditing a img,
-.container .Glass a img {
+.container > div a img {
   border: 2px solid #eee;
   max-width: 100%;
+  min-height: 205px;
 }
-.container .photoEditing a p,
-.container .Glass a p {
+.container > div a p {
   font-size: 20px;
   text-align: center;
   font-weight: bold;

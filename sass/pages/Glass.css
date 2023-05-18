@@ -28,7 +28,6 @@ a {
 p {
   line-height: 1.8;
   color: #9b9393;
-  color: #979191;
 }
 
 footer .footer-bottom, footer .footer-content .col-1 .subscribe .subscribe-input, .home .home-bottom .company, .home .home-content .left .left-end, .home .home-content .left .btns, .home nav.nav .log-in, .home nav.nav ul.links, .home nav.nav {
@@ -175,7 +174,6 @@ footer .footer-bottom, footer .footer-content .col-1 .subscribe .subscribe-input
   color: #000;
   display: flex;
   border-bottom: 1px solid #b7b7b7;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   transition: 0.3s ease-in-out;
@@ -296,7 +294,6 @@ section .last-section .btn {
   color: #fff;
   padding: 20px 28px;
   margin-top: 20px;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 8px;
@@ -366,7 +363,7 @@ footer .footer-content .col-1 .subscribe .subscribe-input input {
   padding: 20px 24px;
   border: 1px none #000;
   border-radius: 12px;
-  background-color: hsla(0deg, 0%, 100%, 0.2);
+  background-color: hsla(0, 0%, 100%, 0.2);
   color: #fff;
   font-weight: 400;
   outline: none;
