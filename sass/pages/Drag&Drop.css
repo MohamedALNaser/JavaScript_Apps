@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #928cff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  gap: 30px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  width: 300px;
+  height: 145px;
+}
+.input .data {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  gap: 4px;
+}
+.input .data input {
+  padding: 10px;
+  outline: none;
+  border: 1px solid #928cff;
+}
+.input .data #btn {
+  border: 1px solid #928cff;
+  background-color: #928cff;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+}
+.input .data #btn:hover {
+  color: #928cff;
+  background-color: #fff;
+  border: 1px solid #928cff;
+}
+
+h2 {
+  font-size: 32px;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: flex-start;
+}
+.list .box {
+  background-color: #fff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.list .box .item {
+  background-color: #928cff;
+  margin: 4px;
+  padding: 10px;
+  cursor: move;
+  color: #fff;
+}/*# sourceMappingURL=Drag&Drop.css.map */
